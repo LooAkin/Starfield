@@ -79,7 +79,7 @@ class Sparkle extends Firework {
   void show() {
     fill(farbe);
     if (cycle > 75)
-      rectSize = rectSize - 0.5;
+      rectSize = rectSize - 1;
     rect((int) myX, (int) myY, rectSize, rectSize);
   }
 
