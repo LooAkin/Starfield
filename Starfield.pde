@@ -15,7 +15,7 @@ void draw() {
   background(25, 25, 100);
   fill(25, 25, 100);
   if (show == true) {
-    if (particle[20].circle == true )
+    if (elSize == 26)
       tower();
     for (int i = 0; i < particle.length; i++) {
       particle[i].show();
