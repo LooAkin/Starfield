@@ -1,7 +1,7 @@
 Firework particle [] = new Firework[1000];
 
-double xValue = (int)(Math.random()*800);
-double yValue = (int)(Math.random()*800);
+double xValue;
+double yValue;
 boolean show;
 
 void setup() {
@@ -24,10 +24,8 @@ void draw() {
   }
 }
 void mouseClicked() {
-  xValue = mouseX;
-  yValue = mouseY;
-  //xValue = (Math.random()*800);
-  //yValue = (Math.random()*800);
+  xValue = (int)mouseX;
+  yValue = (int)mouseY;
   for (int i = 0; i < particle.length; i++) {
     if ((i % 20) == 0)
       particle[i] = new Sparkle();
@@ -46,9 +44,7 @@ class Firework {
   double myX, myY, myAngle, mySpeed;
   float elSize, rectSize, cycle;
   int farbe;
-  boolean circle;
   Firework() {
-    circle = true;
     cycle = 0;
     myAngle = (Math.random() * 2 *  3.14);
     farbe = color((int)(Math.random()*200)+55, (int)(Math.random()*50), 255);
