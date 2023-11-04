@@ -1,7 +1,7 @@
 Firework particle [] = new Firework[1000];
 
-double xValue = (Math.random()*800);
-double yValue = (Math.random()*800);
+double xValue = (int)(Math.random()*800);
+double yValue = (int)(Math.random()*800);
 boolean show;
 
 void setup() {
