@@ -64,7 +64,7 @@ class Firework {
     }
     if (elSize == 0)
       show = false;
-    ellipse((float) myX, (float) myY, elSize, elSize);
+    ellipse((int) myX, (int) myY, elSize, elSize);
   }
   void drift() {
     cycle = cycle + 1;
@@ -84,7 +84,7 @@ class Sparkle extends Firework {
     fill(farbe);
     if (cycle > 75)
       rectSize = rectSize - 0.5;
-    rect((float) myX, (float) myY, rectSize, rectSize);
+    rect((int) myX, (int) myY, rectSize, rectSize);
   }
 
   void drift() {
@@ -109,7 +109,7 @@ class Laser extends Firework {
     }
     if (elSize == 0)
       show = false;
-    ellipse((float) myX, (float) myY, elSize, elSize);
+    ellipse((int) myX, (int) myY, elSize, elSize);
   }
   void drift() {
     cycle = cycle + 2;
