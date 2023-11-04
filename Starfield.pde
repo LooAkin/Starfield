@@ -71,20 +71,16 @@ class Firework {
 
 class Sparkle extends Firework {
   Sparkle() {
-    cycle = 5;
     circle = false;
     farbe = color(255);
     rectSize = 10;
   }
   void show() {
     fill(farbe);
-    if (cycle > 75)
-      rectSize = rectSize - 1;
     rect((int) myX, (int) myY, rectSize, rectSize);
   }
 
   void drift() {
-    cycle = cycle + 0.9;
     myY = myY + (Math.sin(myAngle)*mySpeed) + (Math.random()*5) - 2;
     myX = myX + (Math.cos(myAngle)*mySpeed) + (Math.random()*5) - 2;
   }
