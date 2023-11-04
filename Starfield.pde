@@ -81,8 +81,8 @@ class Sparkle extends Firework {
   }
 
   void drift() {
-    myY = myY + (Math.sin(myAngle)*mySpeed) + (Math.random()*5) - 2;
-    myX = myX + (Math.cos(myAngle)*mySpeed) + (Math.random()*5) - 2;
+    myY = myY + (Math.sin(myAngle)*mySpeed) + (int)(Math.random()*5) - 2;
+    myX = myX + (Math.cos(myAngle)*mySpeed) + (int)(Math.random()*5) - 2;
   }
 }
 
