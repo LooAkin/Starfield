@@ -50,7 +50,7 @@ class Firework {
   Firework() {
     circle = true;
     cycle = 0;
-    myAngle = (Math.random() * 2 *  PI);
+    myAngle = (Math.random() * 2 *  3.14);
     farbe = color((int)(Math.random()*200)+55, (int)(Math.random()*50), 255);
     myX = xValue;
     myY = yValue;
